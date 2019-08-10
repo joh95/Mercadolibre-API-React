@@ -4,11 +4,11 @@ import SearchBar from './SearchBar'
 import ProductsList from './productsList';
 
 class App extends React.PureComponent{
-    
-    
-    state={products:[], id:[], comments:[], id_seller:[],seller_name:[] };
-    onSearchSubmit=async(term)=>{//este metodo nos ayudara a recibir el term del searchBar para hacer las peticiones al API
 
+    state={products:[], id:[], comments:[], id_seller:[],seller_name:[] };
+    
+    onSearchSubmit=async(term)=>{//este metodo nos ayudara a recibir el term del searchBar para hacer las peticiones al API
+        this.setState({products:[], id:[], comments:[], id_seller:[],seller_name:[]});
         const response=await axios.get('https://api.mercadolibre.com/sites/MLC/search',{
             params:{
                 q: term
