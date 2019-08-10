@@ -1,0 +1,2 @@
+.products-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.products-list img{text-align:center;width:160px;grid-gap:span 2;margin-left:30px}.ul{list-style:none}ul h4{font-size:14px;color:#102018}ul h3,ul h4{font-weight:700}ul h3{font-size:25px;color:#101211}.precio{font-size:14px;color:#28a649;font-weight:700}ui container{background-color:#5f9ea0}
+/*# sourceMappingURL=main.45632689.chunk.css.map */
